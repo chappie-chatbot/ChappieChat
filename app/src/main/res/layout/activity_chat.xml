@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.chat.ChatActivity"
+  android:background="@drawable/chat_screen_bg">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/conversation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/userInput"/>
+
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:fontFamily="@font/montserrat"
+    android:background="@drawable/edit_text_bg"
+    android:textSize="20sp"
+    android:inputType="text"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:elevation="3dp"
+    android:hint="Ask Me"
+    android:textColor="#fff"
+    android:textColorHint="#fff"
+    android:id="@+id/userInput"
+    android:imeActionId="4"
+    android:imeOptions="actionSend"/>
+
+
+</RelativeLayout>
