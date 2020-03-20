@@ -1,13 +1,12 @@
 <resources>
   <string name="app_name">ChappieChat</string>
   <!-- Strings related to login -->
-  <string name="prompt_email">Email</string>
-  <string name="prompt_password">Password</string>
-  <string name="action_sign_in">Sign in or register</string>
+  <string name="prompt_provider_number">Provider Number</string>
+  <string name="action_sign_in">Register with provider number</string>
   <string name="action_sign_in_short">Sign in</string>
   <string name="welcome">"Welcome !"</string>
   <string name="invalid_username">Not a valid username</string>
-  <string name="invalid_password">Password must be >5 characters</string>
+  <string name="invalid_providerNumber">Provider number must contain only numeric characters and must be >5 characters</string>
   <string name="login_failed">"Login failed"</string>
-  <string name="title_activity_chat">ChatActivity</string>
+  <string name="title_activity_chat">Welcome!</string>
 </resources>

@@ -1,18 +1,26 @@
 package com.ehg.hackdays.chappie.chappiechat.ui.login;
 
+import com.ehg.hackdays.chappie.chappiechat.data.model.LoggedInUser;
+
 /**
  * Class exposing authenticated user details to the UI.
  */
 class LoggedInUserView {
 
   private String displayName;
-  //... other data fields that may be accessible to the UI
+  private LoggedInUser loggedInUser;
 
-  LoggedInUserView(String displayName) {
+  public LoggedInUserView(String displayName,
+      LoggedInUser loggedInUser) {
     this.displayName = displayName;
+    this.loggedInUser = loggedInUser;
   }
 
-  String getDisplayName() {
+  public String getDisplayName() {
     return displayName;
+  }
+
+  public LoggedInUser getLoggedInUser() {
+    return loggedInUser;
   }
 }
